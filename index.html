@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=Resume.pdf">
     <title>Redirecting...</title>
+    <script>
+        // Redirect to the resume with a timestamp to prevent caching
+        const resumeUrl = "Resume.pdf?v=" + new Date().getTime();
+        window.location.href = resumeUrl;
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="Resume.pdf">click here</a>.</p>
+    <noscript>
+        <p>If you are not redirected automatically, <a href="Resume.pdf">click here</a>.</p>
+    </noscript>
 </body>
 </html>
