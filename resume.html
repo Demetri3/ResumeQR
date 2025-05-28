@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting to Resume</title>
+    <script>
+        // Redirect to the latest resume with timestamp to bust cache
+        const timestamp = new Date().getTime();
+        window.location.href = "Resume.pdf?v=" + timestamp;
+    </script>
+</head>
+<body>
+    <noscript>
+        <p>If you are not redirected, <a href="Resume.pdf">click here</a>.</p>
+    </noscript>
+</body>
+</html>
