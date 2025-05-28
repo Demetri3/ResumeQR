@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-        // Redirect to the resume with a timestamp to prevent caching
+        // Generate a unique resume URL with timestamp
         const resumeUrl = "Resume.pdf?v=" + new Date().getTime();
-        window.location.href = resumeUrl;
+        // Redirect immediately
+        window.location.replace(resumeUrl);
     </script>
 </head>
 <body>
     <noscript>
-        <p>If you are not redirected automatically, <a href="Resume.pdf">click here</a>.</p>
+        <p>If you are not redirected automatically, 
+            <a href="Resume.pdf?v=noscript">click here</a>.
+        </p>
     </noscript>
 </body>
 </html>
